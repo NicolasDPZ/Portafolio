@@ -115,113 +115,113 @@
                         <div class="progress-line"></div>
                     </div>
                 </div>
-                    <script>
-                        const observerOptions = {
-                            root: null,
-                            rootMargin: '0px',
-                            threshold: 0.3
-                        };
+                <script>
+                    const observerOptions = {
+                        root: null,
+                        rootMargin: '0px',
+                        threshold: 0.3
+                    };
 
-                        const observer = new IntersectionObserver((entries) => {
-                            entries.forEach(entry => {
-                                if (entry.isIntersecting) {
-                                    entry.target.classList.add('animate');
-                                }
-                            });
-                        }, observerOptions);
-
-                        document.addEventListener('DOMContentLoaded', () => {
-                            const animateElements = document.querySelectorAll('[data-animate]');
-                            animateElements.forEach(element => {
-                                observer.observe(element);
-                            });
+                    const observer = new IntersectionObserver((entries) => {
+                        entries.forEach(entry => {
+                            if (entry.isIntersecting) {
+                                entry.target.classList.add('animate');
+                            }
                         });
-                    </script>
+                    }, observerOptions);
 
-                    </class>
-                </div>
+                    document.addEventListener('DOMContentLoaded', () => {
+                        const animateElements = document.querySelectorAll('[data-animate]');
+                        animateElements.forEach(element => {
+                            observer.observe(element);
+                        });
+                    });
+                </script>
 
-
-                <div id="Experiencia" class="Experiencia">
-
-                    <h1 class="Experience-title"> Experience </h1>
-                </div>
-
-
-                <div id="Educacion" class="Educacion">
-
-                    <h1 class="education-title"> Training </h1>
-                </div>
+                </class>
+            </div>
 
 
-                <div id="Contactos" class="Contactos">
+            <div id="Experiencia" class="Experiencia">
 
-                    <h1 class="contact-title">Contact me</h1>
-                    <br>
-                    <div class="cards-wrapper">
-                        <div class="container">
-                            <div class="card">
-                                <div class="slide slide1">
-                                    <div class="content">
-                                        <div class="icon">
-                                            <i class="fa-regular fa-envelope fa-6x"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="slide slide2">
-                                    <div class="content">
-                                        <h2>Email</h2>
-                                        <address>
-                                            <p><a href="mailto:micolasperdi@gmail.com"> micolasperdi@gmail.com </a></p>
-                                        </address>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="container">
-                            <div class="card">
-                                <div class="slide slide1">
-                                    <div class="content">
-                                        <div class="icon">
-                                            <i class="fa-brands fa-instagram fa-6x"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="slide slide2">
-                                    <div class="content">
-                                        <h2>Instagram</h2>
-                                        <address>
-                                            <p><a href="https://www.instagram.com/per.d2/">perdi2</a></p>
-                                        </address>
+                <h1 class="Experience-title"> Experience </h1>
+            </div>
+
+
+            <div id="Educacion" class="Educacion">
+
+                <h1 class="education-title"> Training </h1>
+            </div>
+
+
+            <div id="Contactos" class="Contactos">
+
+                <h1 class="contact-title">Contact me</h1>
+                <br>
+                <div class="cards-wrapper">
+                    <div class="container">
+                        <div class="card">
+                            <div class="slide slide1">
+                                <div class="content">
+                                    <div class="icon">
+                                        <i class="fa-regular fa-envelope fa-6x"></i>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="container">
-                            <div class="card">
-                                <div class="slide slide1">
-                                    <div class="content">
-                                        <div class="icon">
-                                            <i class="fa-brands fa-github fa-6x"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="slide slide2">
-                                    <div class="content">
-                                        <h2>Github</h2>
-                                        <address>
-                                            <p><a href="https://github.com/NicolasDPZ">NicolasDPZ</a></p>
-                                        </address>
-                                    </div>
+                            <div class="slide slide2">
+                                <div class="content">
+                                    <h2>Email</h2>
+                                    <address>
+                                        <p><a href="mailto:micolasperdi@gmail.com"> micolasperdi@gmail.com </a></p>
+                                    </address>
                                 </div>
                             </div>
                         </div>
                     </div>
-
+                    <div class="container">
+                        <div class="card">
+                            <div class="slide slide1">
+                                <div class="content">
+                                    <div class="icon">
+                                        <i class="fa-brands fa-instagram fa-6x"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide slide2">
+                                <div class="content">
+                                    <h2>Instagram</h2>
+                                    <address>
+                                        <p><a href="https://www.instagram.com/per.d2/">perdi2</a></p>
+                                    </address>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="card">
+                            <div class="slide slide1">
+                                <div class="content">
+                                    <div class="icon">
+                                        <i class="fa-brands fa-github fa-6x"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide slide2">
+                                <div class="content">
+                                    <h2>Github</h2>
+                                    <address>
+                                        <p><a href="https://github.com/NicolasDPZ">NicolasDPZ</a></p>
+                                    </address>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <br>
-                <br>
-                <br>
+
+            </div>
+            <br>
+            <br>
+            <br>
 
 
     </main>

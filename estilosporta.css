@@ -396,6 +396,90 @@ body {
   background: #7B2EFF;
 }
 
+#certificates-gallery {
+  width: 100%;
+  max-width: 1200px;
+  height: 280px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  position: relative;
+  padding: 20px;
+  padding-top: 120px;
+  padding-right: 130px;
+}
+
+.certificates {
+  perspective: 800px;
+  width: 40px;
+  height: 250px;
+  transition: all 0.5s ease;
+  position: relative;
+  cursor: pointer;
+}
+
+.certificates:hover {
+  width: 200px;
+  z-index: 10;
+}
+
+.certificates img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  transform: rotateY(35deg);
+  transform-style: preserve-3d;
+  border-radius: 8px;
+  border: 3px solid #7B2EFF;
+  box-shadow:
+    0 10px 30px rgba(123, 46, 255, 0.3),
+    0 0 20px rgba(123, 46, 255, 0.2);
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.certificates:hover img {
+  transform: rotateY(0deg) scale(1.05);
+  box-shadow:
+    0 20px 50px rgba(123, 46, 255, 0.5),
+    0 0 40px rgba(123, 46, 255, 0.4);
+  border-color: #9D5EFF;
+}
+
+.certificates .title {
+    position: fixed;
+    bottom: -40px;
+    left: 40%;
+    transform: translateX(-50%);
+    width: 220px;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s ease;
+    pointer-events: none;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.9);
+    white-space: nowrap;
+}
+
+.certificates:hover .title {
+    opacity: 1;
+    visibility: visible; 
+    bottom: -45px;
+}
+.certificates:hover+.certificates img {
+  transform: rotateY(25deg);
+}
+.certificates:has(+ .certificates:hover) img {
+  transform: rotateY(25deg);
+}
 
 
 .Contactos {

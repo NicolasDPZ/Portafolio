@@ -432,11 +432,7 @@ body {
   object-fit: cover;
   transform: rotateY(35deg);
   transform-style: preserve-3d;
-  border-radius: 8px;
   border: 3px solid #7B2EFF;
-  box-shadow:
-    0 10px 30px rgba(123, 46, 255, 0.3),
-    0 0 20px rgba(123, 46, 255, 0.2);
   transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
   position: absolute;
   left: 0;
@@ -445,9 +441,6 @@ body {
 
 .certificates:hover img {
   transform: rotateY(0deg) scale(1.05);
-  box-shadow:
-    0 20px 50px rgba(123, 46, 255, 0.5),
-    0 0 40px rgba(123, 46, 255, 0.4);
   border-color: #9D5EFF;
 }
 
